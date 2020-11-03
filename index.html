@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <!--
-    Description
+    Create an app that loads a single random image for a specific breed, based on a user input. 
+    This app should account for the happy case when the breed is found, as well as the unhappy case when it is not. 
+    Use the endpoint described in the "RANDOM IMAGE FROM A BREED COLLECTION" section of this page of the DogAPI docs. 
+    Note that the API will return an HTTP status code of 404 along with a JSON object with info about the error 
+    if a request is made for a breed that can't be found.
 -->
 
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Site Name</title> <!--browser window title text-->
+        <title>Get Dog of Breed</title> <!--browser window title text-->
         <link href="main.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <main>
-
+            <form id="form">
+                <label for="breed">Enter breed</label>
+                <input type="text" id="breed-choice" name="breed-choice" placeholder="pomeranian">
+                <button type="submit" id="submit-button" name="submit-button">Submit</button>
+            </form>
+            <ul>
+            </ul>
         </main>
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" >
+        </script>
         <script src="scripts.js"></script>
         <footer>
 
